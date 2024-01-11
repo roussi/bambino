@@ -3,11 +3,11 @@
 
 import * as React from "react"
 import { Inter } from "next/font/google"
-import { cn } from '@/lib/utils'
-import { Calendar } from "@/components/ui/calendar"
+import { cn } from '../lib/utils'
+import { Calendar } from "../components/ui/calendar"
 import { Invoice, invoices } from '../components/invoice';
-import InvoiceCreationSheep from "@/components/invoiceCreationSheep"
-import InvoiceList from "@/components/invoicesList"
+import InvoiceCreationSheep from "../components/invoiceCreationSheep"
+import InvoiceList from "../components/invoicesList"
 
 const fontSans = Inter({
   subsets: ["latin"],
