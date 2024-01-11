@@ -5,6 +5,7 @@ import './globals.css'
 const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  manifest: "/manifest.json",
   title: 'Bambino Food',
   description: 'Managing invoices',
 }
