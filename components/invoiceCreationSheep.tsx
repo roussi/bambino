@@ -64,6 +64,7 @@ const InvoiceCreationSheep = ({seSelectedInvoices} : Props) => {
                 type: values.type,
                 date: new Date(values.date),
                 price: parseFloat(values.price),
+                img: "/images/invoice1.png", // TODO: change this to a real image
                 remark: values.remark,
                 status: InvoiceStatus.UNPAID,
             }
