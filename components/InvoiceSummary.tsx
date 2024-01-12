@@ -10,9 +10,9 @@ interface InvoiceSummaryProps {
 
 const InvoiceSummary : React.FC<InvoiceSummaryProps> = ({invoice}) => {
     return (
-        <div className="p-4 mx-3 mt-2 border rounded-md shadow-sm bg-gray-100/40 dark:bg-gray-900">
+        <div className="p-4 mx-3 mt-2 border rounded-md shadow-sm bg-blue-300/10 dark:bg-gray-900">
           <div className="flex items-center justify-between">
-            <h3 className="font-semibold">{invoice.type} : <span className='text-slate-500'>{invoice.price} {' DH'}</span></h3>
+            <h3 className="font-semibold">{invoice.type} : <span className='text-slate-500'>{invoice.price} {'DH'}</span></h3>
             {/* <p className="font-semibold text-blue-600">{invoice.price} {' DH'}</p> */}
             <Badge className={cn(
               invoice.status === InvoiceStatus.PAID ? "bg-green-400" : "bg-red-400",

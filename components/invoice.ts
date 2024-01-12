@@ -7,6 +7,7 @@ export enum InvoiceStatus {
 export interface Invoice {
     type: string;
     remark: string;
+    img: string;
     price: number;
     status: InvoiceStatus;
     date: Date;
@@ -18,6 +19,7 @@ export var invoices: Invoice[] = [
     type: "Poulet",
     remark: "25kg blanc poulet + 2.5kg cuisse",
     price: 250,
+    img: "/images/invoice1.png",
     status: InvoiceStatus.UNPAID,
     date: new Date(),
   },
@@ -25,6 +27,7 @@ export var invoices: Invoice[] = [
     type: "Frites",
     remark: "15kg frites 20DH/KG",
     price: 450,
+    img: "/images/invoice1.png",
     status: InvoiceStatus.PAID,
     date: new Date("2024-01-09"),
   },
@@ -32,6 +35,7 @@ export var invoices: Invoice[] = [
     type: "Fournitures",
     remark: "Voir la photo",
     price: 250,
+    img: "/Users/aroussi/projects/lab/bambino/public/images/invoice1.png",
     status: InvoiceStatus.UNPAID,
     date: new Date("2024-01-09"),
   },

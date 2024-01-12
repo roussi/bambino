@@ -2,16 +2,11 @@
 "use client"
 
 import * as React from "react"
-import { Inter } from "next/font/google"
-import { cn } from '../lib/utils'
 import { Calendar } from "../components/ui/calendar"
 import { Invoice, invoices } from '../components/invoice';
 import InvoiceCreationSheep from "../components/invoiceCreationSheep"
 import InvoiceList from "../components/invoicesList"
 
-const fontSans = Inter({
-  subsets: ["latin"],
-})
 
 export default function Home() {
   const [date, setDate] = React.useState<Date>(new Date())
@@ -37,12 +32,7 @@ export default function Home() {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans inter",
-          fontSans
-        )}
-      >
+      <body className="min-h-screen bg-background">
         {/* Header */}
         <header className="flex items-center justify-center flex-1 w-full px-20 mt-3 text-center md:mt-20">
           <h1 className="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
